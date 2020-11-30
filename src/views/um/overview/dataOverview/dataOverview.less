@@ -1,0 +1,68 @@
+
+.dataOverview-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius:6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .safe-opera {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        font-size: 26px;
+        color: #EA695C;
+        .safe-num {
+            font-family: UnidreamLED;
+            color: #134cb6;
+        }
+    }
+
+    .main-data-wrap {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        .dash-board-wrap,
+        .alarm-obj-num-wrap,
+        .annual-task-num-wrap {
+            flex: 1;
+            display: flex;
+            .num-wrap {
+                flex: 1;
+                div {
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: inherit;
+                    &:last-child {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .dash-board-wrap {
+            flex: 2;
+            .num-wrap {
+                height: 100%;
+            }
+        }
+        .alarm-obj-num-wrap,
+        .annual-task-num-wrap {
+            margin: 20px;
+            .num-wrap {
+                margin-right: 20px;
+                div:first-child {
+                    transform: translateY(50%);
+                    height: 50%;
+                }
+            }
+            .num-wrap:last-child {
+                margin-right: 0px;
+            }
+        }
+        .annual-task-num-wrap {
+            margin-top: 0;
+        }
+    }
+}

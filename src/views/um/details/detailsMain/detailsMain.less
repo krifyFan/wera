@@ -1,0 +1,84 @@
+
+.detailsMain-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .left-menu-wrap {
+        width: 230px;
+        background-color: @main-color;
+        border: 1px solid @main-color;
+        font-size: 18px;
+        color: #77ACE4;
+        .activeFirstMenu {
+            background: #3393E2;
+            color: #fff;
+        }
+        .first-menu-wrap {
+            line-height: 40px;
+            position: relative;
+            margin: 15px 0;
+            cursor: pointer;
+            .menu-icon {
+                width:22px;
+                height:19px;
+                vertical-align: middle;
+                margin-left: 20px;
+                margin-right: 15px;
+            }
+            .arrow {
+                position: absolute;
+                right: 20px;
+                height: 11px; 
+                width: 11px; 
+                transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg); 
+                display: inline-block;
+                -moz-transform: rotate(-135deg); 
+                -ms-transform: rotate(-135deg);
+                -o-transform: rotate(-135deg);
+                vertical-align: middle;
+            }
+            .arrow.to-top {
+                top: 17px;
+                border-right: 2px solid #CCE4F7;
+                border-bottom: 2px solid #CCE4F7; 
+                border-left: 2px solid transparent;
+                border-top: 2px solid transparent; 
+                
+            }
+            .arrow.to-bottom {
+                top: 13px;
+                border-left: 2px solid #CCE4F7;
+                border-top: 2px solid #CCE4F7; 
+                border-right: 2px solid transparent;
+                border-bottom: 2px solid transparent; 
+            }
+            .menu-children-wrap {
+                background:rgba(62,131,215,1);
+                border:1px solid rgba(37,127,190,1);
+                padding: 15px 0;
+                color: #77ACE4;
+                .second-menu-wrap {
+                    margin-left: 60px;
+                    border-left: 2px solid #5C9ADE;
+                    div {
+                        margin-left: 20px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            .activeSecondMenu {
+                color: #CCE4F7;
+            }
+        }
+        .first-menu-wrap:hover {
+            background: @hover-color;
+        }
+        
+    }
+    .details-wrap {
+        flex: 1;
+        position: relative;
+        margin: 20px;
+    }
+}

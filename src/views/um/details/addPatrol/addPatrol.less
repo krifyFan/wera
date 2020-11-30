@@ -1,0 +1,153 @@
+
+.addPatrol-wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    .details-form {
+        margin-top: 70px;
+        .area-wrap, 
+        .obj-wrap {
+            width: 100%;
+            border: 1px solid #ccc;
+            height: 100px;
+            overflow-y: auto;
+            padding-left: 10px;
+        }
+        .area-wrap-width {
+            width: 80%;
+            margin-right: 10px;
+
+        }
+        .confirm-btn,
+        .area-wrap {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .month-wrap {
+            border: 1px solid #0078DB;
+            display: flex;
+            width: 240px;
+            flex-wrap: wrap;
+            padding: 5px 0px 5px 5px;
+            div {
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .choosedDay {
+                background: @main-color;
+                color: #ffffff;
+            }
+            .choosedDayOne {
+                background: #CCE4F7;
+            }
+        }
+        .interval-day {
+            display: flex;
+            justify-content: space-between;
+            .interval-day-block {
+                flex: 1;
+            }
+            .interval-day-block:nth-child(2) {
+                flex: 4;
+            }
+            .interval-day-block:last-child {
+                text-align: right;
+            }
+        }
+    }
+    .pop-tip-content-wrap{
+        position: absolute;
+        z-index: 999;
+        right: 0px;
+        top: -100px;
+        width: 80%;
+        height:80px;
+        line-height:40px;
+        background:#fff;
+        border-radius:4px;
+        border:1px solid #ccc;
+        padding-left: 10px;
+        .poptip-content {
+            height: 100%;
+            overflow: auto;
+        }
+    }
+    .cac_bder{
+        width: 0;
+        border-top: 30px solid #ccc;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        bottom: -30px;
+        left: 100px;
+        z-index:1;
+    
+        }
+    .cac_bg{
+        width: 0;
+        border-top: 29px solid #fff;
+        border-left: 29px solid transparent;
+        border-right: 29px solid transparent;
+        position: absolute;
+        left: 101px;
+        z-index: 2;
+        bottom: -27px;
+    }
+    .check-box {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #cccccc;
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+        &.hasChecked {
+            background: @main-color;
+        }
+        &.hasChecked::after {
+            content: '';
+            display: table;
+            width: 0.09rem;
+            height: 0.15rem;
+            position: absolute;
+            top: 0.013333rem;
+            left: 0.08rem;
+            border: 0.03rem solid #fff;
+            border-top: 0;
+            border-left: 0;
+            transform: rotate(45deg) scale(1);
+            transition: all 0.2s ease-in-out;
+        }
+        &.hasIndeterminate {
+            background: @main-color;
+        }
+        &.hasIndeterminate::after {
+            content: "";
+            width: 11px;
+            height: 2px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            position: absolute;
+            left: 3px;
+            top: 8px;
+            background: #fff;
+        }
+    }
+    .check-box,
+    .check-name {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .btn-wrap {
+        text-align: center;
+        margin: 30px auto;
+        .submit-btn {
+            margin-right: 20px;
+        }
+    }
+    .ivu-poptip, .ivu-poptip-rel {
+        width: 100%;
+    }
+}

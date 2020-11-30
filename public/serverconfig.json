@@ -1,0 +1,12 @@
+{
+    "ApiUrl": "http://172.18.4.156:6060",
+    "EChartsTheme": "halloween",
+    "ApacheUrl": "http://172.18.4.156:88",
+    "MQParams": {
+        "address": "ws://172.18.4.112:15674/ws",
+        "login": "admin",
+        "passcode": "admin",
+        "connectType": "exchange",
+        "connectName": "bandweaver.maxware.exchange.front"
+    }
+}

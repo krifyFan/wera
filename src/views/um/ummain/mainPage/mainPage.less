@@ -1,0 +1,31 @@
+
+
+.mainPage-wrap {
+    width: 100%;
+    height: 100%;
+    .nav-bar-wrap {
+        height: 7vh;
+        line-height: 7vh;
+    }
+    .container-wrap {
+        position: absolute;
+        top: 12vh;
+        bottom: @base-space-l;
+        left: @base-space-l;
+        right: @base-space-l;
+        padding: @base-space-m;
+        box-shadow: 0 0 5px 5px #cedace;
+    }
+    .ivu-breadcrumb {
+        margin: @base-space-l;
+        &>span:last-child {
+            color: @main-color;
+        }
+    }
+
+    @media screen and (max-width: 1366px){
+        .container-wrap {
+            top: 14vh;
+        }
+    }
+}

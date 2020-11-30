@@ -1,0 +1,81 @@
+@import './variables.less';
+
+// .content-wrap {
+//     .ivu-form {
+//         .ivu-form-item-label {
+//             font-size: 14px;
+//         }
+//         .ivu-form-item-content {
+//             // font-size: 20px;
+//             // input框、数字框样式重写
+//             .ivu-input, 
+//             .ivu-input-number
+//             {
+//                 height: 36px;
+//                 line-height: 36px;
+//                 font-size: 13px;
+//                 border-radius: 4px;
+//             }
+//             // textarea样式重写
+//             textarea.ivu-input {
+//                 height: auto;
+//             }
+//             // number样式框右侧向上向下按钮
+//             .ivu-input-number {
+//                 .ivu-input-number-handler {
+//                     height: 25px;
+//                     .ivu-input-number-handler-down-inner, 
+//                     .ivu-input-number-handler-up-inner {
+//                         line-height: 25px;
+//                     }
+//                 }
+    
+//             }
+//             // 下拉框样式重写
+//             .ivu-select-single .ivu-select-selection .ivu-select-placeholder, 
+//             .ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+//                 height: 36px;
+//                 line-height: 36px;
+//                 border-radius: 4px;
+//                 font-size: 13px;
+//             }
+//             .ivu-select-single .ivu-select-selection {
+//                 height: 36px;
+//                 border-radius: 4px;
+//             }
+//             .ivu-input-prefix i, .ivu-input-suffix i {
+//                 line-height: 36px;
+//             }
+//         }
+//     }
+// }
+.table-wrap{
+    .ivu-table-wrapper {
+        .ivu-table {
+            thead tr th {
+                border-right: 1px solid #e8eaec;
+                background: @table-header-bgColor;
+                color: #ffffff;
+            }
+        }
+    }
+    .ivu-table {
+        .ivu-table-row:nth-child(odd) {
+            td {
+                background-color: @table-odd-color;
+            }
+        }
+        .ivu-table-row:nth-child(even) {
+            td {
+                background-color: @table-even-color;
+            }
+        }
+    } 
+}
+
+.ivu-form-item-error .ivu-input:hover {
+    border-color: #f2323f !important;
+}
+.ivu-form-item-error .ivu-input {
+    border: 1px solid #f2323f !important;
+}

@@ -1,0 +1,151 @@
+
+.videoManageAll-wrap {
+    width: 100%;
+    .content-wrap {
+        display: flex;
+        box-shadow: none;
+        .video-wrap {
+            flex: 6;
+            overflow-y: auto;
+            .video-item-wrap {
+                display: inline-block;
+                width: 50%;
+                height: 50%;
+                text-align: center;
+                vertical-align: top;
+                position: relative;
+                .video-item {
+                    position: absolute;
+                    top: 20px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    background: rosybrown;
+                    border-radius: 10px;
+
+                }
+            }
+            .video-item-wrap:nth-child(even) {
+                .video-item {
+                    left: 20px;
+                }
+            }
+            .video-item-wrap:nth-child(1),
+            .video-item-wrap:nth-child(2) {
+                .video-item {
+                    top: 0px;
+                }
+            }
+        }
+        .control-wrap {
+            flex: 2;
+            position: relative;
+            .ptz-control-wrap {
+                margin-left: 6%;
+                height: 40%;
+                box-shadow: 1px 1px 10px 0px #e0e0e0;
+                .title {
+                    padding-top: 10px;
+                    margin-left: 20px;
+                    span {
+                        font-size: 18px;
+                        color: #606060;
+                        margin-left: 15px;
+                    }
+                }
+                .ptz-control-components-wrap {
+                    padding: 10%;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .camera-info-warp {
+                height: 56.5%;
+                margin-left: 6%;
+                margin-top: 6%;
+                box-shadow: 1px 1px 10px 0px #e0e0e0;
+                .title {
+                    padding-top: 10px;
+                    margin-left: 20px;
+                    span {
+                        font-size: 18px;
+                        color: #606060;
+                        margin-left: 15px;
+                    }
+                }
+                .camera-info {
+                    padding-top: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-size: 16px;
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .w2 {
+                        letter-spacing: 0.5em;
+                        margin-right: -0.5em;
+                    }
+                    .camera-name, .camera-loc, .camera-preset-position {
+                        line-height: 3.2vh;
+                        div {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        .info {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            width: 10vw;
+                        }
+                        .camera-preset-position-wrap {
+                            border: 1px solid @main-color;
+                            border-radius: 10px;
+                            width: 70%;
+                            height: 33vh;
+                            overflow-y: auto;
+                            padding: 10px;
+                            &::-webkit-scrollbar{
+                                width: 4px;
+                                height: 4px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                            }
+                        
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 5px;
+                                box-shadow: inset 0 0 5px @main-color;
+                                background: rgba(0, 0, 0, 0.2)
+                            }
+                        
+                            &::-webkit-scrollbar-track {
+                                border-radius: 4px;
+                                box-shadow: inset 0 0 5px rgb(235, 227, 235);
+                                background: rgba(0, 0, 0, 0.1)
+                            }
+                            p {
+                                position: relative;
+                                margin-bottom: 10px;
+                                .btn-wrap {
+                                    position: absolute;
+                                    right: 0px;
+                                }
+                            }
+                        }
+
+                        @media screen and (min-width: 1680px) {
+                            .info {
+                                width: 13vw;
+                            }
+                            .camera-preset-position-wrap {
+                                width: 80%;
+                                height: 35vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

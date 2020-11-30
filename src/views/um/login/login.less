@@ -1,0 +1,91 @@
+
+.login-wrap {
+    width: 100%;
+    height: 100vh;
+    // background: @main-color;
+    position: relative;
+    h1 {
+        color: #fff;
+        position: absolute;
+        z-index: 3;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .login-form-wrap {
+        width: 420px;
+        position: absolute;
+        z-index: 3;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        border-radius: 6px;
+        padding: 20px 30px;
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 34px;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .from-wrap {
+            margin-top: 30px;
+            .ivu-form-item {
+                margin-bottom: 0px;
+                .ivu-input {
+                    line-height: 50px;
+                    height: 50px;
+                }
+            }
+            .ivu-input-prefix i, 
+            .ivu-input-suffix i {
+                color: #D2D2DA;
+            }
+            .username-wrap,
+            .pass-wrap,
+            .login-btn {
+                margin: 20px 0;
+                .ivu-input-prefix {
+                    i {
+                        line-height: 50px;
+                    }
+                }
+                .ivu-input {
+                    background-color: #fff0;
+                    border: 1px solid #004b77;
+                    color: #fff;
+                }
+                .ivu-input:hover {
+                    border-color: #00d2ff;
+                }
+            }
+            .username-wrap,
+            .pass-wrap {
+                .ivu-input {
+                    background-color: #fff0;
+                    border: 1px solid #004b77;
+                    color: #fff;
+                }
+                .ivu-input:hover {
+                    border-color: #00d2ff;
+                }
+            }
+            .ivu-btn {
+                // background: #cccccc;
+                outline: none;
+            }
+            .login-btn-active.ivu-btn {
+                background-image: linear-gradient(#00BCFF, #0464C7);
+                color: #ffffff;
+                cursor: pointer;
+                border: none;
+                font-weight: 800;
+            }
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        h1 {
+            top: 30%;
+        }
+    }
+}

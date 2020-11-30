@@ -1,0 +1,102 @@
+
+.dataOver-wrap {
+    width: 100%;
+    height: 100%;
+    // background:@container-bgColor;
+    // border: 1px solid #ffffff;
+    border-radius:6px;
+    position: relative;
+
+    .safe-opera {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        font-size: 26px;
+        color: @redColor;
+        .safe-num {
+            font-family: UnidreamLED;
+            color: #0ebef3;
+        }
+    }
+
+    .choose-item-wrap {
+        margin-left: 20px;
+        li {
+            display: inline-block;
+            list-style: none;
+            width: 60px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border:1px solid rgba(127,127,127,1);
+            border-right: none;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        li:last-child {
+            border-right: 1px solid rgba(127,127,127,1);
+        }
+        .active-item {
+            background: #3276D4;
+            color: #ffffff;
+        }
+    }
+
+    .bottom-wrap {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        .dash-board {
+            position: absolute;
+            height: 58%;
+            border-bottom: 4px solid #efefef;
+            display: flex;
+            left: 20px;
+            right: 20px;
+            .left-dash-board-wrap, .right-dash-board-wrap, .temperature-wrap, .humidity-wrap {
+                flex: 1;
+                height: 99%;
+                display: inline-block;
+            }
+        }
+    
+        .equip-num-wrap {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            top: 60%;
+            .available-num, .alarm-num, .online-num, .offline-num {
+                flex: 1;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                color: #E0E4E7;
+                font-size: 26px;
+                margin-left: 20px;
+                div {
+                    height: 50%;
+                    line-height: 2;
+                }
+                .redColor {
+                    color: @redColor;
+                }
+            }
+            .available-num {
+                margin-left: 0;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1440px) {
+        .equip-num-wrap {
+            .available-num, .alarm-num, .online-num, .offline-num {
+                font-size: 22px;
+            }
+        }
+    }
+}
